@@ -1,0 +1,83 @@
+/* Global styles
+------------------------------------------------------*/
+/*Color links are light green*/
+body {
+  color: #343434;
+}
+
+img {
+width: 300px;
+}
+a {
+  color: #C0D5BE;
+  padding: 8px;
+  border-radius: 3px;
+}
+a:visited {
+  color: gray;
+}
+a:hover {
+  background: #183E25;
+  font-weight: bold;
+}
+
+
+/* Profile section
+------------------------------------------------------*/
+header {
+background: #254D32;
+color: #98C793;
+}
+
+
+
+
+
+
+
+/* projects
+------------------------------------------------------*/
+.projects {
+  background: #4C8057;
+  color: #27292C;
+}
+
+
+
+
+
+
+/* Work experience
+------------------------------------------------------*/
+.experience {
+  background: #69B578;
+}
+
+
+
+/* Education & certifications
+------------------------------------------------------*/
+.cert-education {
+background: #4C8057;
+color: #27292C;
+}
+
+
+
+
+/* Skills
+------------------------------------------------------*/
+.skills {
+background: #69B578;
+color: #29603B;
+}
+
+
+
+
+/* Contact
+------------------------------------------------------*/
+footer {
+  background: #254D32;
+  color: #C0D5BE;
+}
