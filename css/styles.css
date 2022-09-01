@@ -3,6 +3,8 @@
 /*Color links are light green*/
 body {
   color: #343434;
+  margin: 0;
+  padding: 0;
 }
 
 img {
@@ -20,7 +22,11 @@ a:hover {
   background: #183E25;
   font-weight: bold;
 }
-
+.content-wrap {
+  width: 1000px;
+  margin: 0 auto;
+  padding: 60px 0;
+}
 
 /* Profile section
 ------------------------------------------------------*/
@@ -28,6 +34,7 @@ header {
 background: #254D32;
 color: #98C793;
 }
+
 
 
 
