@@ -28,7 +28,7 @@ h2 {
   margin: 0;
 }
 .content-wrap {
-  width: 1200px;
+  max-width: 75%; /*1200px/ 800px*/
   margin: 0 auto;
   padding: 30px 0;
 }
@@ -85,19 +85,20 @@ color: #29603B;
 }
 .skills-h {
   text-align: inherit;
-  width: 1200px;
+  max-width: 75%;
+  /*width: 1200px;*/
   margin: 0 auto;
   padding-top: 30px;
-  padding-bottom: 0px;
   border-spacing: 20px;
 }
 .skills-wrap {
-  width: 1200px;
+  /*width: 1200px;*/
+  max-width: 75%;
   margin:  0 auto;
   padding-bottom: 30px;
   column-count: 3;
   column-width: 200px;
-  column-gap: 60px;
+  column-gap: 30px;
 }
 
 
