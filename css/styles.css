@@ -144,6 +144,9 @@ footer {
 ------------------------------------------------------*/
 /* Adjusting the layout to different scenarios when in smaller screens */
 @media screen and (min-width:750px){
+  body {
+    text-align: left;
+  }
     .header-float img {
     float: right;
     margin-left: 20px;
