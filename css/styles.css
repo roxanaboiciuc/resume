@@ -11,7 +11,7 @@ html {
 body {
   /*font-family: Book Antiqua, serif;*/
   font-family: 'Spline Sans Mono', monospace;
-  color: #343434;
+  color: #00003f;
   margin: 0;
   padding: 0;
   text-align: justify;
@@ -20,24 +20,29 @@ body {
 }
 /*profile photo */
 img {
-width: 300px;
+width: 200px;
 border-radius: 5px;
   }
-  /* links */
-a {
-  color: #646464;
-  padding: 8px;
-  border-radius: 3px;
 
-}
-/* links style */
-a:visited {
-  color: gray;
-}
-a:hover {
-  background: #183E25;
-  font-weight: bold;
-}
+/* Links are set up for each category*/
+  /*
+  a {
+    color: #d9d9ff;
+    padding: 8px;
+    border-radius: 3px;
+
+  }
+  /* links style
+  a:visited {
+    color: white;
+  }
+  a:hover {
+    background: #F8F8FF;
+    color: #00003f;
+    font-weight: bold;
+  }
+  */
+
 /*header styles */
 h2 {
   margin: 0;
@@ -52,12 +57,18 @@ h1, h2, h3 {
   padding: 30px 0;
 }
 
+/* Divider */
+.section-divider {
+  color: #00003f;
+  align-items: center;
+}
+
 
 /* Profile section
 ------------------------------------------------------*/
 header {
-background: #183E25;
-color: #C0D5BE;
+background: #00003f; /* dark blue*/  /*#F8F8FF; /*gri inchis */  /*#183E25;*/
+color: #d9d9ff; /*very light blue */ /*#2F4F4F /*dark green * / /*#C0D5BE;*/
 text-align: justify;
 }
 /* header profile photo + introduction */
@@ -70,19 +81,36 @@ text-align: justify;
 }
 
 
-
 /* projects
 ------------------------------------------------------*/
 .projects {
-  background: #88B69A;
-  color: #27292C;
+  background: #F8F8FF;
+  color: #00003f; /* dark blue*/
 }
+
+/* links */
+a.projects:link {
+  color: #00003f;
+  padding: 8px;
+  border-radius: 3px;
+}
+/* links style */
+a.projects:visited {
+  color: #d9d9ff;
+}
+a.projects:hover {
+  background: #000064; /* navy */
+  color: #d9d9ff;  /*blue white */
+  font-weight: bold;
+}
+
 
 
 /* Work experience
 ------------------------------------------------------*/
 .experience {
-  background: #88B69A;
+  background: #F8F8FF;
+  color: #00003f;
 }
 
 
@@ -90,16 +118,16 @@ text-align: justify;
 /* Education & certifications
 ------------------------------------------------------*/
 .cert-education {
-background: #88B69A;
-color: #27292C;
+background: #F8F8FF;
+color: #00003f;
 }
 
 
 /* Skills
 ------------------------------------------------------*/
 .skills {
-background: #88B69A;
-color: #27292C;
+background: #F8F8FF;
+color: #00003f;
 }
 
 /* skills header style */
@@ -125,12 +153,9 @@ color: #27292C;
 /* Contact
 ------------------------------------------------------*/
 footer {
-  /*background: #254D32; - dark green - unused as the background is a photo*/
-  color: #C0D5BE;
+  background: #00003f;
+  color: #d9d9ff;
   text-align: center;
-  background-image: url(../images/green.jpg);
-  background-size: cover;
-  opacity: 0.92;
 }
 .contact-list {
   list-style-type: none;
@@ -140,6 +165,22 @@ footer {
 .contact-list a {
   padding: 15px;
   display: inline-block;
+}
+
+/* links */
+a {
+  color: #d9d9ff;
+  padding: 8px;
+  border-radius: 3px;
+}
+/* links style */
+a:visited {
+  color: #d9d9ff;
+}
+a:hover {
+  background: #F8F8FF;
+  color: #00003f;
+  font-weight: bold;
 }
 
 /* responsive style
