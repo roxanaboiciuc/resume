@@ -15,7 +15,7 @@ body {
   margin: 0;
   padding: 0;
   text-align: justify;
-  font-size: : 15px;
+  font-size: 15px;
   line-height: 1.5;
 }
 /*profile photo */
@@ -67,8 +67,8 @@ h1, h2, h3 {
 /* Profile section
 ------------------------------------------------------*/
 header {
-background: #00003f; /* dark blue*/  /*#F8F8FF; /*gri inchis */  /*#183E25;*/
-color: #d9d9ff; /*very light blue */ /*#2F4F4F /*dark green * / /*#C0D5BE;*/
+background: #F8F8FF; /* dark blue*/  /*#F8F8FF; /*gri inchis */  /*#183E25;*/
+color: #00003f; /*very dark blue */ /*#2F4F4F /*dark green * / /*#C0D5BE;*/
 text-align: justify;
 }
 /* header profile photo + introduction */
@@ -96,11 +96,11 @@ a.projects:link {
 }
 /* links style */
 a.projects:visited {
-  color: #d9d9ff;
+  color: #00003f;
 }
 a.projects:hover {
-  background: #000064; /* navy */
-  color: #d9d9ff;  /*blue white */
+  background: #F8F8FF; /* navy */
+  color: #00003f;  /*blue white */
   font-weight: bold;
 }
 
@@ -153,8 +153,8 @@ color: #00003f;
 /* Contact
 ------------------------------------------------------*/
 footer {
-  background: #00003f;
-  color: #d9d9ff;
+  background: #F8F8FF;
+  color: #00003f;
   text-align: center;
 }
 .contact-list {
@@ -169,13 +169,13 @@ footer {
 
 /* links */
 a {
-  color: #d9d9ff;
+  color: #00003f;
   padding: 8px;
   border-radius: 3px;
 }
 /* links style */
 a:visited {
-  color: #d9d9ff;
+  color: #00003f;
 }
 a:hover {
   background: #F8F8FF;
