@@ -2,190 +2,267 @@
 <html lang="en">
    <head>
     <meta charset="UTF-8">
-    <meta name="viewport" initial-scale="1, maximum-scale=1"> <!--- content="width=device-width  ---->
+    <meta name="viewport" content="width=device-width, initial-scale=1">
     <link href="https://fonts.googleapis.com/css2?family=Special+Elite&family=Spline+Sans+Mono:wght@300&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
     <link rel="stylesheet" href="css/styles.css">
-    <link scr="image/images.png">
-    <title>Roxana Dumitrescu's Resume: Creatively technical </title>
+    <title>Roxana Dumitrescu's Resume: Creatively technical</title>
    </head>
   <body>
-    <main>
+    <main class="main-container">
+      
       <!-- ***********************  ABOUT / PROFILE  *********************** -->
-      <header class="header-float">
-        <div class="content-wrap">
-          <h1 class="page-title">Roxana Dumitrescu: Technology & Photography</h1>
-          <img src="images/profilephoto.jpg" alt="profile photo">
-          <h2 class="header-title" style="text-align:center">Passionate about data & tech | Self-taught | Photography enthusiast | Dog lover</h2>
-          <h4 class="header-title" style="text-align:center"> Based in Bucharest, Romania </h4>
-            <p>Welcome to my online resume! I have decided to create my online resume as I am passionate about back end web development as well as front end. My main area of focus is 
-              data validation, however I gravitate towards learning tools and languages that can help me focus my attention on undestandning the data better and faster.
-            Both in my professional and personal projects I am a devoted, curious person and want to learn more each day. I am interested in automation and delivering performance with minumum efforts. 
-            I strive for organization and documenting every task.
-            Besides having a passion for technology and data, my time is spent doing photography and visiting a dog shelter around Bucharest.</p>
+      <header class="header-box">
+        <div class="header-grid">
+          <div class="header-image-container">
+            <img src="images/profilephoto.jpg" alt="profile photo">
+          </div>
+          <div class="header-text-container">
+            <h1 class="page-title">Roxana Dumitrescu: Technology & Photography</h1>
+            <h2 class="header-title"> 😎 Passionate about data & tech | Self-taught | Photography enthusiast | Dog lover</h2>
+            <h4 class="header-location"> 📍 Based in Bucharest, Romania</h4>
+            <p>Welcome to my online resume! I have decided to create my online resume as I am passionate about back-end web development as well as front-end. My main area of focus is data validation, however I gravitate towards learning tools and languages that can help me focus my attention on understanding the data better and faster. Both in my professional and personal projects I am a devoted, curious person and want to learn more each day. I am interested in automation and delivering performance with minimum efforts. I strive for organization and documenting every task. Besides having a passion for technology and data, my time is spent doing photography and visiting a dog shelter around Bucharest.</p>
+            
+            <!-- Contact Links inside the header box -->
+           <div class="contact-list-header">
+            <a href="mailto:boiciuc.roxana@gmail.com" title="Email Me"><i class="fa-solid fa-envelope"></i></a>
+            <a href="http://roxanablack.com" target="_blank" title="Blog"><i class="fa-solid fa-camera"></i></a>
+            <a href="https://www.linkedin.com/in/roxana-dumitrescu-a93125aa/" target="_blank" title="LinkedIn"><i class="fa-brands fa-linkedin"></i></a>
+            <a href="https://github.com/roxanaboiciuc" target="_blank" title="GitHub"><i class="fa-brands fa-github"></i></a>
+          </div>
+          </div>
         </div>
       </header>
-           <!-- ********************  PROJECTS / PORTFOLIO  ********************* -->
-      <section class="projects">
-        <div class="content-wrap">
-        <h2>Projects</h2>
-        <p>Here you can see some of my projects in both of my areas of interest.</p>
-        <!-- Copy the whole <section> block to add more projects. -->
-        <section>
-          <h3>Technology</h3>
-          <p>E-book library - In a pursuit of learning more about web development I am creating an e-book library 
-            at the following link:<a href="https://roxanaboiciuc.github.io/E-Book-Library/">E-book Library</a></p>
-          <p> Python File Editor and Converter</p>
-          <p>Project ....</p>
-        </section>
-        <!-- End of Project block. -->
-        <!-- Copy the whole <section> block to add more projects. -->
-        <section>
-          <h3>Photography</h3>
-          <p>On my blog I like to show some of the things that go in backstage of the photoshoots I have, what gear do I use and ultimately
-            show the pictures resulted. My focus right now is nature, architecture and self portraits, but my plans for the future include having more photoshoots with people. </p>
-            <a href="http://roxanablack.com">roxanablack.com</a>
-          <!---<img src="images/blog.jpg" alt="Photography"> -->
-        <!---  <a href="#" target="_blank">View project / case study</a> -->
-        </section>
-      </div>
-        <!-- End of Project block. -->
-      </section>
-      <!-- ***********************  WORK EXPERIENCE  *********************** -->
-      <section class="experience">
-        <div class="content-wrap">
-          <h2>Work Experience</h2>
-          <!-- Copy this whole <section> block to add more jobs. -->
-            <section>
-            <h3>DRiV | BI Data Analyst | October 2024 - present </h3>
-            <ul>
-              <li> As a Data Analyst inside BI I handle data validation across our SAP and non-SAP systems against Azure and Power BI dashboards </li>
-              <li> Providing first layer of data validation on newly created ServiceNow incidents or requests and as well supporting the team on the enhancement 
-                until resolution. I am also doing on going data analysis and validation for Azure data and I am flagging issues as they arise to the support team 
-                for correction.   </li>
-              <li> Involved in migration projects from non-SAP to SAP system, with focus on data integrity and accuracy as well as acting as a point of contact for business </li>
-              <li> Involved in harmonizing the Sales & Orders KPIs for LATAM region to ensure that data is reported correctly to senior leadership</li>
-              <li> I worked on alligning material and client master data </li>
-              <li> Worked closely with the Azure DevOps team for 6 months in developing and testing the Salesorder snapshot project for global scope </li>
-              <li> Time sensitive data in month end closing (e.g. Financial data) has priority on my checks, therefore I created some Power BI reports linked to SQL Server to ensure data is correct </li>
-              <li> I delivered training to my colleagues on "Introduction to Power BI"</li>
-            </ul>
-          </section>
-          <section>
-            <h3>Tenneco | Financial Data Analyst | July 2022 - September 2024</h3>
-            <ul>
-              <li>In charge of designing and maintaining Power BI reports as needed</li>
-              <li>Responsible of gathering Azure data to further analyze the sales figures and provide meaningful insights</li>
-              <li>Providing ad-hoc data analysis of sales and price evolution</li>
-              <li>Continuously doing integrity checks and improvements to better benefit the business</li>
-              <li>Using SAP ERP tables and transactions for additional data exports or checks needed (FICO, MM modules)</li>
-              <li>Acting as a SPOC between the plant managers and controller and our financial team</li>
-              <li>Leveraging my technology knowledge in creating automatic tasks to improve the daily work (Python tools, MS Flows, etc)</li>
-            </ul>
-          </section>
-          <!-- End of Job block. -->
-          <!-- Copy this whole <section> block to add more jobs. -->
-          <section>
-            <h3>Tenneco | Supply Chain Data Analyst | August 2021 - July 2022</h3>
-            <ul>
-              <li>User support for “Power Steering” global project management tool, access, data and module configuration requests</li>
-              <li>Design, program, document, and maintain reports and dashboards using SAP HANA/MS Azure extraction and Power BI</li>
-              <li>Regular use of standard and custom SAP reports to extract important operational and finance data</li>
-              <li>Working in improving the work processes using automation tool such as VBA, MS flow, MS automate</li>
-            </ul>
-          </section>
-          <!-- End of Job block. -->
-        </section>
-      <!-- ******************  EDUCATION & CERTIFICATIONS ****************** -->
-      <section class="cert-education">
-        <div class="content-wrap">
-          <h2>Certifications</h2>
-          <!-- Copy this whole <section> block to add more schools. -->
-          <section>
-            <p><b>Linkedin Learning | Learning Data Science: Using Agile Methodology</b> - December 2022</p>
-            <p><b>Linkedin Learning | Using Power BI with Excel</b> - December 2022</p>
-            <p><b>Linkedin Learning | CSS Essential Training</b> - September 2022</p>
-            <p><b>Linkedin Learning | Python Data Analysis</b> - May 2022</p>
-            <p><b>Linkedin Learning | Power BI Data Visualization and Dashboard Tips, Tricks, & Techniques</b> - January 2022</p>
-            <p><b>Linkedin Learning | Learning Microsoft Power BI Desktop</b> - January 2022</p>
-            <p><b>Cisco Networking Academy | IoT</b> - June 2021</p>
-            <p><b>Cisco Networking Academy | Introduction to CyberSecurity</b> - May 2021</p>
-            <p><b>BIT Academy | BACK-END WEB DEVELOPMENT MODULE 2 (PHP FRAMEWORKS)</b> - August 2020</p>
-            <p><b>BIT Academy | BACK-END WEB DEVELOPMENT MODULE 1 (MYSQL/PHP)</b> - May 2020</p>
-            <p><b>BIT Academy | MYSQL PROGRAMMING</b> - March 2017</p>
-            <p><b>BIT Academy | MYSQL FUNDAMENTALS</b> - November 2016</p>
-          </section>
-          <!-- End of School block. -->
-          <br><br><h2>Education</h2>
-          <!-- Copy this whole <section> block to add more schools. -->
-          <section>
-            <p><b>Bucharest Academy of Economic Studies | International Economics and Affairs </b> - September 2011 - July 2014</p>
-          </section>
-      </div>
-        <!-- End of School block. -->
-      </section>
-      <!-- ******************  Skills ****************** -->
-      <section class="skills">
-        <div class="skills-h">
-                <h2>Skills</h2>
-                <p><b>Language skills</b> - English (C2)</p>
-                    <p><b>Digital skills:</b></p>
+
+   <!-- ********************  PROJECTS / PORTFOLIO  ********************* -->
+      <section class="resume-row projects">
+        <div class="left-col">
+          <h2>Projects</h2>
         </div>
-        <div class="skills-wrap">
-          <section>
-                    <br><b>Work-related digital skills</b>
-                  <ul>
-                      <li>MS SQL Server Management Studio</li>
-                      <li>Azure Data Studio</li>
-                      <li>Anaconda Jupyter</li>
-                      <li>Visual Studio Code</li>
-                      <li>Power BI</li>
-                      <li>MS Flows & Power Automate</li>
-                      <li>MS Teams, Outlook, Sharepoint for Business</li>
-                      <li>SAP ERP</li>
-                  </ul>
-                    <br><b>Digital skills acquired through courses</b>
-                  <ul>
+        <div class="right-col">
+          <div class="card-container">
+            <div class="resume-card">
+              <h3>Technology</h3>
+              <p>E-book library - In a pursuit of learning more about web development I am creating an e-book library at the following link: <a href="https://roxanaboiciuc.github.io/E-Book-Library/">E-book Library</a></p>
+              <p>Python File Editor and Converter</p>
+              <p>Project ....</p>
+            </div>
+            <div class="resume-card">
+              <h3>Photography</h3>
+              <p>On my blog I like to show some of the things that go in backstage of the photoshoots I have, what gear do I use and ultimately show the pictures resulted. My focus right now is nature, architecture and self portraits, but my plans for the future include having more photoshoots with people.</p>
+              <a href="http://roxanablack.com" target="_blank">roxanablack.com</a>
+            </div>
+          </div>
+        </div>
+      </section>
+
+     <!-- ***********************  WORK EXPERIENCE  *********************** -->
+      <section class="resume-row experience">
+        <div class="left-col">
+          <h2>Work Experience</h2>
+        </div>
+        <div class="right-col">
+          <div class="card-container">
+            <div class="resume-card">
+              <h3>DRiV | BI Data Analyst | October 2024 - present</h3>
+              <ul>
+                <li>As a Data Analyst inside BI I handle data validation across our SAP and non-SAP systems against Azure and Power BI dashboards</li>
+                <li>Providing first layer of data validation on newly created ServiceNow incidents or requests and as well supporting the team on the enhancement until resolution. I am also doing ongoing data analysis and validation for Azure data and I am flagging issues as they arise to the support team for correction.</li>
+                <li>Involved in migration projects from non-SAP to SAP system, with focus on data integrity and accuracy as well as acting as a point of contact for business</li>
+                <li>Involved in harmonizing the Sales & Orders KPIs for LATAM region to ensure that data is reported correctly to senior leadership</li>
+                <li>I worked on aligning material and client master data</li>
+                <li>Worked closely with the Azure DevOps team for 6 months in developing and testing the Salesorder snapshot project for global scope</li>
+                <li>Time sensitive data in month-end closing (e.g. Financial data) has priority on my checks, therefore I created some Power BI reports linked to SQL Server to ensure data is correct</li>
+                <li>I delivered training to my colleagues on "Introduction to Power BI"</li>
+              </ul>
+            </div>
+            
+            <div class="resume-card">
+              <h3>Tenneco | Financial Data Analyst | July 2022 - September 2024</h3>
+              <ul>
+                <li>In charge of designing and maintaining Power BI reports as needed</li>
+                <li>Responsible for gathering Azure data to further analyze the sales figures and provide meaningful insights</li>
+                <li>Providing ad-hoc data analysis of sales and price evolution</li>
+                <li>Continuously doing integrity checks and improvements to better benefit the business</li>
+                <li>Using SAP ERP tables and transactions for additional data exports or checks needed (FICO, MM modules)</li>
+                <li>Acting as a SPOC between the plant managers and controller and our financial team</li>
+                <li>Leveraging my technology knowledge in creating automatic tasks to improve the daily work (Python tools, MS Flows, etc)</li>
+              </ul>
+            </div>
+            
+            <div class="resume-card">
+              <h3>Tenneco | Supply Chain Data Analyst | August 2021 - July 2022</h3>
+              <ul>
+                <li>User support for “Power Steering” global project management tool, access, data and module configuration requests</li>
+                <li>Design, program, document, and maintain reports and dashboards using SAP HANA/MS Azure extraction and Power BI</li>
+                <li>Regular use of standard and custom SAP reports to extract important operational and finance data</li>
+                <li>Working on improving the work processes using automation tools such as VBA, MS flow, MS automate</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- ******************  CERTIFICATIONS & EDUCATION ****************** -->
+<!-- ******************  CERTIFICATIONS ****************** -->
+<section class="resume-row certifications">
+  <div class="left-col">
+    <h2>Certifications</h2>
+  </div>
+  <div class="right-col">
+    <!-- Wrap the list in a grid container -->
+    <div class="cert-grid">
+      
+      <div class="cert-card">
+        <span class="cert-icon">📜</span>
+        <div class="cert-details">
+          <p class="cert-title">Learning Data Science: Using Agile Methodology</p>
+          <p class="cert-issuer">LinkedIn Learning • December 2022</p>
+        </div>
+      </div>
+
+      <div class="cert-card">
+        <span class="cert-icon">📜</span>
+        <div class="cert-details">
+          <p class="cert-title">Using Power BI with Excel</p>
+          <p class="cert-issuer">LinkedIn Learning • December 2022</p>
+        </div>
+      </div>
+
+      <div class="cert-card">
+        <span class="cert-icon">📜</span>
+        <div class="cert-details">
+          <p class="cert-title">CSS Essential Training</p>
+          <p class="cert-issuer">LinkedIn Learning • September 2022</p>
+        </div>
+      </div>
+
+      <div class="cert-card">
+        <span class="cert-icon">📜</span>
+        <div class="cert-details">
+          <p class="cert-title">Python Data Analysis</p>
+          <p class="cert-issuer">LinkedIn Learning • May 2022</p>
+        </div>
+      </div>
+      <div class="cert-card">
+        <span class="cert-icon">📜</span>
+        <div class="cert-details">
+          <p class="cert-title">Power BI Data Visualization and Dashboard Tips, Tricks, & Techniques</p>
+          <p class="cert-issuer">LinkedIn Learning • January 2022</p>
+        </div>
+      </div>
+            <div class="cert-card">
+        <span class="cert-icon">📜</span>
+        <div class="cert-details">
+          <p class="cert-title">PLearning Microsoft Power BI Desktop</p>
+          <p class="cert-issuer">LinkedIn Learning • January 2022</p>
+        </div>
+      </div>
+            <div class="cert-card">
+        <span class="cert-icon">📜</span>
+        <div class="cert-details">
+          <p class="cert-title">IoT</p>
+          <p class="cert-issuer">Cisco Networking Academy • June 2021</p>
+        </div>
+      </div>
+            <div class="cert-card">
+        <span class="cert-icon">📜</span>
+        <div class="cert-details">
+          <p class="cert-title">Introduction to CyberSecurity</p>
+          <p class="cert-issuer">Cisco Networking Academy • May 2021</p>
+        </div>
+      </div>
+            <div class="cert-card">
+        <span class="cert-icon">📜</span>
+        <div class="cert-details">
+          <p class="cert-title">BACK-END WEB DEVELOPMENT MODULE 2 (PHP FRAMEWORKS)</p>
+          <p class="cert-issuer">BIT Academy • August 2020</p>
+        </div>
+      </div>
+            <div class="cert-card">
+        <span class="cert-icon">📜</span>
+        <div class="cert-details">
+          <p class="cert-title">BACK-END WEB DEVELOPMENT MODULE 1 (MYSQL/PHP)</p>
+          <p class="cert-issuer">BIT Academy • May 2020</p>
+        </div>
+      </div>
+            <div class="cert-card">
+        <span class="cert-icon">📜</span>
+        <div class="cert-details">
+          <p class="cert-title">MYSQL PROGRAMMING</p>
+          <p class="cert-issuer">BIT Academy • March 2017</p>
+        </div>
+      </div>
+            <div class="cert-card">
+        <span class="cert-icon">📜</span>
+        <div class="cert-details">
+          <p class="cert-title">MYSQL FUNDAMENTALS</p>
+          <p class="cert-issuer">BIT Academy • November 2016</p>
+        </div>
+      </div>
+      <!-- Repeat this pattern for your other certifications -->
+      
+    </div>
+  </div>
+</section>
+<!-- ******************  EDUCATION  ****************** -->
+      <section class="resume-row education">
+        <div class="left-col">
+          <h2>Education</h2>
+        </div>
+        <div class="right-col">
+          <div class="card-container">
+            <div class="resume-card">
+              <h3>Bucharest Academy of Economic Studies</h3>
+              <p><b>International Economics and Affairs</b> - September 2011 - July 2014</p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+     <!-- ******************  SKILLS  ****************** -->
+      <section class="resume-row skills">
+        <div class="left-col">
+          <h2>Skills</h2>
+        </div>
+        <div class="right-col">
+          <!-- The cohesive card that glows and floats on hover -->
+          <div class="resume-card">
+            <p><b>Language skills</b> - English (C2)</p>
+            <div class="skills-wrap">
+              <div>
+                <br><b>Tools:</b>
+                <ul>
+                    <li>MS SQL Server Management Studio</li>
+                    <li>Azure Data Studio</li>
+                    <li>Anaconda Jupyter</li>
+                    <li>Visual Studio Code</li>
+                    <li>Power BI & Power Query</li>
+                    <li>MS Flows & Power Automate</li>
+                    <li>MS Teams, Outlook, Sharepoint for Business</li>
+                    <li>SAP ERP</li>
                     <li>HeidiSQL</li>
                     <li>MySQL Workbench</li>
-                    <li>PHP</li>
-                    <li>Drupal admin</li>
-                    <li>Wordpress admin</li>
-                    <li>GIT</li>
-                    <li>Apache Open Office</li>
-                    <li>Power BI</li>
-                    <li>Power Query</li>
-                  </ul>
-                <br><b>Self taught digital skills</b>
-                <ul>
                     <li>Photoshop</li>
                     <li>Lightroom</li>
-                    <li>HTML</li>
-                    <li>C++</li>
-                    <li>CSS</li>
-                    <li>Python</li>
-                    <li>Microsoft Office Package (Outlook, Word, Excel, OneNote, PowerPoint)</li>
                 </ul>
-            </section>
+              </div>
+              <div>
+                <br><b>Technologies:</b>
+                <ul>
+                  <li>SQL</li>
+                  <li>PHP</li>
+                  <li>HTML</li>
+                  <li>C++</li>
+                  <li>CSS</li>
+                  <li>Python</li>
+                  <li>Azure synapse</li>
+                  <li>Azure Data Factory</li>
+                </ul>
+              </div>
+            </div>
           </div>
-        </section>
-      <!-- *****************  CONTACT INFO / SOCIAL MEDIA  ***************** -->
-      <footer>
-        <div class="content-wrap">
-        <h2>Let's Keep in Touch!</h2>
-        <!-- Social media and contact links. Add or remove any networks. -->
-          <br>
-          <div class="contact-list">
-            <a href="mailto:boiciuc.roxana@gmail.com">boiciuc.roxana@gmail.com</a>
-            <a href="http://roxanablack.com" target="_blank">roxanablack.com</a>
-            <a href="https://www.linkedin.com/in/roxana-dumitrescu-a93125aa/" target="_blank">LinkedIn</a>
-            <a href="https://github.com/roxanaboiciuc" target="_blank">GitHub</a>
-            <br><br>
-          </div>
-          <p><i>Notes: For the full list of work experience, please check my PDF <a href="https://drive.google.com/file/d/1voBn2UbmmG2ZBWuMaHZ6-zLn6i3JD5oY/view?usp=share_link">CV</a>
-            or to go my <a href="https://www.linkedin.com/in/roxana-dumitrescu-a93125aa/" target="_blank">LinkedIn</a> page.
-          This online resume was last edited in May 2026.</i></p>
         </div>
-      </footer>
+      </section>
     </main>
   </body>
 </html>

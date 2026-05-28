@@ -2,210 +2,359 @@
 ------------------------------------------------------*/
 html {
   box-sizing: border-box;
-  *, *:before *:after {
-    box-sizing: inherit;
-  }
+}
+*, *:before, *:after {
+  box-sizing: inherit;
 }
 
-/*Color links & text are light green, rest of body text is dark green */
 body {
-  /*font-family: Book Antiqua, serif;*/
   font-family: 'Spline Sans Mono', monospace;
-  color: #00003f;
+  background-color: #00003f; /* Deep Dark Blue Background */
+  color: #F8F8FF;           /* Ghost White Text */
   margin: 0;
-  padding: 0;
-  text-align: justify;
+  padding: 20px;
+  text-align: left;
   font-size: 15px;
-  line-height: 1.5;
+  line-height: 1.6;
 }
-/*profile photo */
-img {
-width: 200px;
-border-radius: 5px;
-  }
 
-/* Links are set up for each category*/
-  /*
-  a {
-    color: #d9d9ff;
-    padding: 8px;
-    border-radius: 3px;
-
-  }
-  /* links style
-  a:visited {
-    color: white;
-  }
-  a:hover {
-    background: #F8F8FF;
-    color: #00003f;
-    font-weight: bold;
-  }
-  */
-
-/*header styles */
-h2 {
-  margin: 0;
+.main-container {
+  max-width: 1100px;
+  margin: 0 auto;
 }
+
+/* Typography styles */
 h1, h2, h3 {
   font-family: 'Special Elite', cursive;
-}
-/* all content inside the page EXCEPT the skills (see below)  */
-.content-wrap {
-  max-width: 75%;
-  margin: 0 auto;
-  padding: 30px 0;
+  color: #F8F8FF;
+  margin-top: 0;
 }
 
-/* Divider */
-.section-divider {
-  color: #00003f;
-  align-items: center;
+h2 {
+  font-size: 24px;
 }
 
-
-/* Profile section
-------------------------------------------------------*/
-header {
-background: #F8F8FF; /* dark blue*/  /*#F8F8FF; /*gri inchis */  /*#183E25;*/
-color: #00003f; /*very dark blue */ /*#2F4F4F /*dark green * / /*#C0D5BE;*/
-text-align: justify;
-}
-/* header profile photo + introduction */
-.header-float {
-  overflow: hidden;
+h3 {
+  font-size: 18px;
 }
 
-.page-title {
-  text-align: center;
-}
-
-
-/* projects
-------------------------------------------------------*/
-.projects {
-  background: #F8F8FF;
-  color: #00003f; /* dark blue*/
-}
-
-/* links */
-a.projects:link {
-  color: #00003f;
-  padding: 8px;
-  border-radius: 3px;
-}
-/* links style */
-a.projects:visited {
-  color: #00003f;
-}
-a.projects:hover {
-  background: #F8F8FF; /* navy */
-  color: #00003f;  /*blue white */
-  font-weight: bold;
-}
-
-
-
-/* Work experience
-------------------------------------------------------*/
-.experience {
-  background: #F8F8FF;
-  color: #00003f;
-}
-
-
-
-/* Education & certifications
-------------------------------------------------------*/
-.cert-education {
-background: #F8F8FF;
-color: #00003f;
-}
-
-
-/* Skills
-------------------------------------------------------*/
-.skills {
-background: #F8F8FF;
-color: #00003f;
-}
-
-/* skills header style */
-.skills-h {
-  text-align: inherit;
-  max-width: 75%;
-  margin: 0 auto;
-  padding-top: 30px;
-  border-spacing: 20px;
-}
-/* skills wrapped into 3 columns for readability in full screen/desktop mode*/
-.skills-wrap {
-  max-width: 75%;
-  margin: 0 auto;
-  padding-bottom: 30px;
-  column-count: 3;
-  column-width: 200px;
-  column-gap: 30px;
-}
-
-
-
-/* Contact
-------------------------------------------------------*/
-footer {
-  background: #F8F8FF;
-  color: #00003f;
-  text-align: center;
-}
-.contact-list {
-  list-style-type: none;
-  padding: 0;
-  justify-content: center;
-}
-.contact-list a {
-  padding: 15px;
-  display: inline-block;
-}
-
-/* links */
+/* Global Link Customization */
 a {
-  color: #00003f;
-  padding: 8px;
+  color: #F8F8FF;
+  text-decoration: underline;
+  padding: 2px 5px;
   border-radius: 3px;
+  transition: all 0.3s ease;
 }
-/* links style */
-a:visited {
-  color: #00003f;
-}
+
 a:hover {
   background: #F8F8FF;
   color: #00003f;
   font-weight: bold;
+  text-decoration: none;
 }
 
-/* responsive style
+/* Profile / Header Box styling (Item 1)
 ------------------------------------------------------*/
-/* Adjusting the layout to different scenarios when in smaller screens */
-@media screen and (min-width:750px){
+.header-box {
+  border: 2px solid #F8F8FF; /* Framed with text color */
+  border-radius: 15px;       /* Rounded margins */
+  padding: 30px;
+  margin-bottom: 40px;
+  
+  /* Fade effect using subtle linear-gradient background */
+  background: linear-gradient(135deg, rgba(248, 248, 255, 0.15) 0%, rgba(248, 248, 255, 0.02) 100%);
+  backdrop-filter: blur(5px); /* Enhances the clean fade look */
+}
+
+.header-grid {
+  display: flex;
+  gap: 30px;
+  align-items: flex-start;
+}
+
+.header-image-container {
+  flex: 0 0 200px; /* Forces picture left and holds width */
+}
+
+.header-image-container img {
+  width: 200px;
+  height: auto;
+  border-radius: 8px;
+  border: 1px solid #F8F8FF;
+}
+
+.header-text-container {
+  flex: 1;
+}
+
+.page-title {
+  text-align: left;
+  margin-bottom: 10px;
+}
+
+.header-title {
+  font-size: 16px;
+  font-family: 'Spline Sans Mono', monospace;
+  font-weight: normal;
+  margin-bottom: 8px;
+}
+
+.header-location {
+  margin-top: 0;
+  margin-bottom: 15px;
+  opacity: 0.9;
+}
+
+/* Contact Links inside the header box */
+.contact-list-header {
+  margin-top: 20px;
+  padding-top: 15px;
+  border-top: 1px dashed rgba(248, 248, 255, 0.3);
+  display: flex;
+  flex-wrap: wrap;
+  gap: 15px;
+}
+
+.contact-list-header a {
+  font-size: 14px;
+}
+
+/* Left-Right Row Layout Strategy (Item 2)
+------------------------------------------------------*/
+.resume-row {
+  display: flex;
+  margin-bottom: 40px;
+  padding-bottom: 20px;
+  border-bottom: 1px solid rgba(248, 248, 255, 0.1);
+}
+
+.left-col {
+  flex: 0 0 250px; /* Anchors headings to the left */
+  padding-right: 20px;
+}
+
+.right-col {
+  flex: 1; /* Content sits on the right side */
+}
+
+/* Custom Handling for Work Experience Layout 
+   So H3 sits immediately alongside/after H2 inside the left track if desired,
+   or cascades smoothly. 
+------------------------------------------------------*/
+.experience .job-block {
+  margin-bottom: 30px;
+}
+
+.experience .job-block h3 {
+  border-bottom: 1px solid rgba(248, 248, 255, 0.2);
+  padding-bottom: 5px;
+  margin-bottom: 10px;
+}
+
+/* Skills Column Wrapping
+------------------------------------------------------*/
+.skills-wrap {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 20px;
+}
+
+.skills-wrap ul {
+  padding-left: 20px;
+  margin-top: 5px;
+}
+
+/* Contact Footer
+------------------------------------------------------*/
+footer {
+  text-align: center;
+  padding: 40px 0 20px 0;
+}
+
+.footer-wrap h2 {
+  margin-bottom: 20px;
+}
+
+.contact-list {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+
+/* Responsive Handling for Mobile Screens
+------------------------------------------------------*/
+@media screen and (max-width: 768px) {
   body {
-    text-align: left;
+    padding: 10px;
   }
-    .header-float img {
-    float: right;
-    margin-left: 20px;
-    margin-bottom: 20px;
+  
+  .header-grid {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
   }
-  .contact-list {
-    display: flex;
+  
+  .page-title {
+    text-align: center;
+  }
+  
+  .contact-list-header {
     justify-content: center;
   }
+  
+  .resume-row {
+    flex-direction: column;
+  }
+  
+  .left-col {
+    flex: 0 0 auto;
+    margin-bottom: 15px;
+    border-bottom: 2px solid #F8F8FF;
+    padding-bottom: 5px;
+  }
 }
-/*adjust text size in smaller screen sizes*/
-@media screen and (max-width:749px){
-  h1, h2, h3 {
-    font-size: 20px;
-  }
-  .contact-list a {
-    padding: 5px;
-  }
+
+
+/* Replace standard bullets with stars */
+.right-col ul, 
+.skills-wrap ul {
+  list-style: none; /* Removes the default bullet points */
+  padding-left: 0;   /* Resets the indentation */
+}
+
+.right-col ul li, 
+.skills-wrap ul li {
+  position: relative;
+  padding-left: 25px; /* Creates space for the star */
+  margin-bottom: 8px; /* Adds space between items */
+}
+
+.right-col ul li::before, 
+.skills-wrap ul li::before {
+  content: "⭐";      /* Injects the star emoji */
+  position: absolute;
+  left: 0;
+  top: 0;
+  font-size: 14px;    /* Matches your text size perfectly */
+}
+
+/*----------------
+/* Style adjustment for the contact icons */
+.contact-list-header a i,
+.contact-list a i {
+  font-size: 24px;       /* Makes the icons larger and easily clickable */
+  vertical-align: middle;
+  transition: transform 0.2s ease; /* Adds a smooth lift effect on hover */
+}
+
+/* Specific fix for the email link so the icon sits nicely next to the text */
+.contact-list-header a i.fa-envelope {
+  font-size: 18px;
+  margin-right: 5px;
+}
+
+/* Subtle hover effect: the icon grows slightly when hovered */
+.contact-list-header a:hover i,
+.contact-list a:hover i {
+  transform: scale(1.15);
+}
+
+/*-----------------------
+/* Certifications Grid layout */
+.cert-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(280px, 1fr)); /* Fits 2 or 3 columns depending on screen size */
+  gap: 15px;
+  margin-top: 10px;
+}
+
+/* Individual Certification Card */
+.cert-card {
+  background: rgba(248, 248, 255, 0.03); /* Extremely subtle ghost-white overlay */
+  border: 1px solid rgba(248, 248, 255, 0.15); /* Soft border line */
+  border-radius: 8px;
+  padding: 15px;
+  display: flex;
+  align-items: flex-start;
+  gap: 12px;
+  transition: all 0.3s ease;
+}
+
+/* Hover Effect - Card subtly lifts and glows when you mouse over it */
+.cert-card:hover {
+  background: rgba(248, 248, 255, 0.08);
+  border-color: #F8F8FF; /* Brightens up the border to match your text */
+  transform: translateY(-2px); /* Lifts up slightly */
+}
+
+/* Mini icon alignment */
+.cert-icon {
+  font-size: 18px;
+  margin-top: 2px;
+}
+
+.cert-details {
+  flex: 1;
+}
+
+/* Title of the course */
+.cert-title {
+  font-weight: bold;
+  font-size: 14px;
+  margin: 0 0 4px 0; /* Clears default paragraph spacing */
+  line-height: 1.3;
+}
+
+/* Platform name and date stamp */
+.cert-issuer {
+  font-size: 12px;
+  color: rgba(248, 248, 255, 0.7); /* Slightly fades out the date for visual hierarchy */
+  margin: 0;
+}
+
+
+/* Universal Container Setup */
+.card-container {
+  display: flex;
+  flex-direction: column;
+  gap: 20px; /* Space between different job or project cards */
+  margin-top: 10px;
+}
+
+/* Reusable Resume Card Style (Matches your Certifications card design!) */
+.resume-card, 
+.cert-card {
+  background: rgba(248, 248, 255, 0.03); /* Soft ghost-white tint */
+  border: 1px solid rgba(248, 248, 255, 0.15); /* Clean, transparent border line */
+  border-radius: 10px;
+  padding: 20px;
+  transition: all 0.3s cubic-bezier(0.25, 0.8, 0.25, 1); /* Ultra-smooth hover transition transition */
+}
+
+/* The Global Highlight / Hover Effect */
+.resume-card:hover, 
+.cert-card:hover {
+  background: rgba(248, 248, 255, 0.07);             /* Lights up slightly background color */
+  border-color: rgba(248, 248, 255, 0.9);            /* Illuminates the frame to text color */
+  transform: translateY(-3px);                       /* Sleek 3px upward float physical lift */
+  box-shadow: 0 10px 20px rgba(248, 248, 255, 0.05); /* Adds an elegant, soft glow underneath */
+}
+
+/* Card Typography Adjustments */
+.resume-card h3 {
+  margin-top: 0;
+  margin-bottom: 12px;
+  border-bottom: 1px dashed rgba(248, 248, 255, 0.2);
+  padding-bottom: 8px;
+}
+
+.resume-card p:last-child {
+  margin-bottom: 0; /* Ensures clean internal padding balance */
+}
+
+/* Slight padding tweak to make the skills card layout fit beautifully */
+.skills .resume-card {
+  padding: 25px;
 }
